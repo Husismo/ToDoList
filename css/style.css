@@ -1,0 +1,236 @@
+button{
+    background-color: transparent;
+    border: 0;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    color: #4e4e4e;
+}
+
+.login-confirm {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__wrapper {
+    padding: 50px 0px 0px 0px;
+    background: #232931;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    border-radius: 25px;
+}
+.login__title {
+    padding: 0px 0px 30px 0px;
+    font-size: 30px;
+
+}
+.login__btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #4169e1;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header {
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    background-color: white;
+}
+.header__ul {
+    display: flex;
+    justify-content: space-around;
+}
+.bgVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.header__btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+.controls__wrapper{
+    display: flex;
+    margin: 0px 30px 30px 30px;
+}
+
+.volume__img{
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main__toDolist {
+    max-width: 300px;
+    background-color: white;
+    /* padding: 30px; */
+    border: 1px solid grey;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* visibility: hidden; */
+}
+
+.toDoList__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 0px 30px;
+}
+.toDoList__exit{
+    cursor: pointer;
+}
+.main__title {
+    font-size: 25px;
+    font-weight: normal;
+    border-bottom: 1px solid #  ;
+    padding: 0 0 5px 0;
+    margin: 0 0 15px 0;
+    user-select: none;
+    
+    
+}
+
+.main__li{
+    margin: 0 30px 20px 30px;
+    font-size: 18px;
+    display: flex;
+}
+
+.delete__btn{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.checkbox{
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #797979;
+}
+.completed input {
+    color: #696969;
+}
+
+.main__li + .main__li{
+    margin-top: 20px;
+}
+
+.add-li__btn{
+    color: darkgray;
+    cursor: pointer;
+    margin: 0px 30px 30px 30px;
+    user-select: none;
+}
+
+.add-li__btn:hover{
+    color: rgb(110, 110, 110);
+    border-radius: 5px;
+    background-color: rgba(110, 110, 110, 0.075);
+}
+
+.delete-all__btn{
+    color: darkgray;
+    cursor: pointer;
+    margin: 0px 30px 30px 30px;
+    user-select: none;
+}
+
+.delete-all__btn:hover{
+    color: rgb(110, 110, 110);
+    border-radius: 5px;
+    background-color: rgba(110, 110, 110, 0.075);
+}
+
+.li__inner{
+    display: flex;
+    width: 213px;
+}
+
+.input__text{
+    border: none;
+    font-size: 16px;
+}
+.input__text:focus{
+    outline: 0;
+    border-bottom: #000 solid 1px;
+}
+.volume{
+    cursor: pointer;
+    background-color: #fff;
+}
+.timer__wrapper{
+    margin: 0px 40px 30px 30px;
+    font-size: 30px;
+}
+.your-own-video {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #55555591;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.your-own-video h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.own__wrapper input{
+    padding: 10px;
+    font-size: 15px;
+    width: 540px;
+    border-radius: 5px;
+    outline: 0;
+}
+.own__wrapper span {
+    position: relative;
+    cursor: pointer;
+    right: -15px;
+    top: -85px;
+}
+.own__wrapper{
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #cccccc91;
+}
+.submitLinkBtn {
+    background-color: #4169e1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.sendedForm{
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #55555591;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-size: 30px;
+}
+

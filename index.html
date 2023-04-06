@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>toDoList</title>
+</head>
+
+<body>
+    <div class="login-confirm">
+        <div class="login__wrapper">
+            <h2 class="login__title">Ready to join?</h2>
+            <button class="login__btn">Yes!</button>
+        </div>
+    </div>
+    <div class="your-own-video">
+        <div class="own__wrapper">
+            <h2>Would you like to add your video? Submit a link!</h2>
+            <label for="">
+                <input type="text">
+                <button class="submitLinkBtn">Submit</button>
+            </label>
+            <span class="closeOwn">X</span>
+        </div>
+    </div>
+    <div class="sendedForm">
+        <h2>Link sent! We will review your video and add it to the site!</h2>
+    </div>
+    <header class="header">
+        <ul class="header__ul">
+            <li class="header__li"><button class="toDo__Btn header__btn">ToDo List</button></li>
+            <li class="header__li"><button class="timer__Btn header__btn">Timer</button></li>
+            <li class="header__li"><button class="fullscreen__Btn header__btn">Fullscreen Mode</button></li>
+            <li class="header__li"><button class="sendVideo__Btn header__btn">Send a video</button></li>
+        </ul>
+    </header>
+    <video loop class="bgVideo">
+        <source src="bg videos/Lofi Girl finally stops studying.mp4" type="video/mp4">
+    </video>
+    <div class="main__content">
+        <div class="main__toDolist">
+            <div class="toDoList__header">
+                <h3 class="main__title">My tasks</h3>
+                <div><img src="./images/cross.png" alt="" class="toDoList__exit"></div>
+            </div>
+
+
+
+            <ul class="main__ul">
+                <li class="main__li">
+                    <div class="li__inner">
+                        <label>
+                            <input class="checkbox" type="checkbox">
+                        </label>
+                        <input class="input__text" type="text" value="Task 1" maxlength="26">
+                    </div>    
+                    <img src="images/cross.png" alt="" class="delete__btn">
+                </li>
+                <li class="main__li">
+                    <div class="li__inner">
+                        <label>
+                            <input class="checkbox" type="checkbox">
+                        </label>
+                        <input class="input__text" type="text" value="Task 2" maxlength="26"> 
+                    </div>    
+                    <img src="images/cross.png" alt="" class="delete__btn">
+                </li>
+                <li class="main__li">
+                    <div class="li__inner">
+                        <label>
+                            <input class="checkbox" type="checkbox">
+                        </label>
+                        <input class="input__text" type="text" value="Task 3" maxlength="26">
+                    </div>    
+                    <img src="images/cross.png" alt="" class="delete__btn">
+                </li>
+            </ul>
+            <p class="add-li__btn">+ New To-Do</p>
+            <p class="delete-all__btn">Delete All tasks</p>
+            <div class="controls__wrapper">
+                <div class="volume__wrapper">
+                    <img class="volume__img" src="images/volumeOff.jpg" alt="">
+                </div>
+                <input type="range" class="volume" value="0">
+            </div>
+            <div class="timer__wrapper" hidden>
+                <div class="timer-display">29:30</div>
+                <button class="start-button">Start</button>
+                <button class="pause-resume-button" disabled>Pause</button>
+                <button class="timer__settings-btn">Timer Setting</button>
+                <div>
+                    <div class="timer__settings" hidden>
+                        <label>
+                            <input type="number" class="minutes-input" value="0" min="0" max="59"> : 
+                            <input type="number" class="seconds-input" value="30" min="0" max="59">
+                          </label>
+                          <button class="reset-button" disabled>Reset</button>
+                    </div>
+                    
+                  </div>
+            </div>
+
+
+        </div>
+        
+        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
