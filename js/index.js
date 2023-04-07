@@ -50,15 +50,19 @@ function createTask() {
   liInner.append(inputCheckBox);
 
   let inputText = document.createElement(`INPUT`);
-  inputText.autofocus = `true`;
   inputText.classList.add(`input__text`);
   inputText.setAttribute(`maxlength`, `26`);
   liInner.append(inputText);
+  inputText.focus();
 
   let img = document.createElement(`IMG`);
   img.setAttribute(`src`, `images/cross.png`);
   img.classList.add(`delete__btn`);
   li.appendChild(img);
+  let maxHeight = document.documentElement.clientHeight - 67;
+  if (toDoList.offsetHeight > maxHeight){
+    toDoList.setAttribute(`style`, `overflow-y: scroll; max-height: ${maxHeight}px;`)
+  }
 }
 
 let volumeRange = document.querySelector(`.volume`);
