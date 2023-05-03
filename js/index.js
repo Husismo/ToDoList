@@ -19,6 +19,20 @@ toDoList.addEventListener(`click`, (event) => {
   }
 });
 
+
+let wrapperControls = document.querySelector(`.wrapper__play`);
+wrapperControls.addEventListener(`click`, function (event) {
+  let bgVideo = document.querySelector(`.bgVideo`);
+  let playBtn = document.querySelector(`.play__video`);
+  let pauseBtn = document.querySelector(`.pause__video`);
+  if (event.target == playBtn){
+    bgVideo.play();
+  } else if (event.target == pauseBtn){
+    bgVideo.pause();
+  }
+})
+
+
 // handBtn.addEventListener(`click`, function () {
 //   let bgVideo = document.querySelector(`.bgVideo`);
 //   let handImg = document.querySelector(`.hand__img`);
@@ -82,17 +96,17 @@ function volume() {
 
 }
 
-let btnPlay = document.querySelector(`.login__btn`);
-btnPlay.addEventListener(`click`, videoPlay);
+// let btnPlay = document.querySelector(`.login__btn`);
+// btnPlay.addEventListener(`click`, videoPlay);
 
-function videoPlay() {
-  let bgVideo = document.querySelector(`.bgVideo`);
-  let loginConfirm = document.querySelector(`.login-confirm`);
-  loginConfirm.style.display = `none`
-  bgVideo.play();
-  let v = 0;
-  bgVideo.volume = v;
-}
+// function videoPlay() {
+//   let bgVideo = document.querySelector(`.bgVideo`);
+//   let loginConfirm = document.querySelector(`.login-confirm`);
+//   loginConfirm.style.display = `none`
+//   bgVideo.play();
+//   let v = 0;
+//   bgVideo.volume = v;
+// }
 
 let headerUL = document.querySelector(`.header__ul`);
 headerUL.addEventListener(`click`, headerClick)

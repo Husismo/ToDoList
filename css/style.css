@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.login__wrapper {
+/* .login__wrapper {
     padding: 50px 0px 0px 0px;
     background: #232931;
     width: 300px;
@@ -41,7 +41,7 @@ body{
     cursor: pointer;
     color: #fff;
     
-}
+} */
 
 .header {
     padding: 20px 0px 20px 0px;
@@ -67,7 +67,7 @@ body{
 
 .controls__wrapper{
     display: flex;
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 5px 30px;
 }
 
 .volume__img{
@@ -244,3 +244,14 @@ body{
     transform: scale(0.97)
 }
 
+.wrapper__play {
+    margin: 0px 30px 30px 30px;
+    
+}
+.play__video {
+    cursor: pointer;
+}
+
+.pause__video{
+    cursor: pointer;
+}
